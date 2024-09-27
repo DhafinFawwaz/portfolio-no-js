@@ -359,6 +359,10 @@ section > h3 {
     width: .16rem;
     height: calc(100% + 2rem);
     background-color: rgb(79 70 229);
+
+}
+.qualification-grid > li > ul > div > div:nth-child(2) > h6:nth-child(2) {
+    line-height: .9rem;
 }
 .qualification-grid > li > ul > div > div:nth-child(2) > h6:nth-child(3) {
     display: flex;
