@@ -13,6 +13,8 @@
     --rim-light-top: inset 0 1px 0 0 #ffffff0d;
     --drop-shadow-sm: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
     --drop-shadow-md: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+
+    --greyed-color: rgb(172, 185, 204);
 }
 
 
@@ -185,7 +187,7 @@ h5 {
 h6 {
     font-size: .775rem;
     font-weight: 500;
-    color: rgb(100 116 139);
+    color: var(--greyed-color);
 }
 
 p {
@@ -323,7 +325,7 @@ section > h3 {
     text-align: center;
     font-weight: 500;
     font-size: 1rem;
-    color: rgb(100 116 139);
+    color: var(--greyed-color);
 }
 .qualification-grid {
     display: grid;
@@ -342,12 +344,12 @@ section > h3 {
     display: flex;
     flex-direction: column;
 }
-.qualification-grid > li > ul > div {
+.qualification-grid > li > ul > li {
     display: grid;
     grid-template-columns: 1rem 1fr;
     margin-top: 1rem;
 }
-.qualification-grid > li > ul > div > div:nth-child(1) {
+.qualification-grid > li > ul > li > div:nth-child(1) {
     display: flex;
     justify-content: center;
     margin-top: 0.28rem;
@@ -366,7 +368,7 @@ section > h3 {
 } */
 
 /* box */
-.qualification-grid > li > ul > div > div:nth-child(1) > div:nth-child(2) {
+.qualification-grid > li > ul > li > div:nth-child(1) > div:nth-child(2) {
     position: absolute;
     width:  .75rem;
     height: .75rem;
@@ -374,21 +376,21 @@ section > h3 {
     background-color: rgb(79 70 229);
 }
 /* line */
-.qualification-grid > li > ul > div > div:nth-child(1) > div:nth-child(1) {
+.qualification-grid > li > ul > li > div:nth-child(1) > div:nth-child(1) {
     width: .16rem;
     height: calc(100% + 2rem);
     background-color: rgb(79 70 229);
 
 }
-.qualification-grid > li > ul > div > div:nth-child(2) > h6:nth-child(2) {
+.qualification-grid > li > ul > li > div:nth-child(2) > h6:nth-child(2) {
     line-height: .9rem;
 }
-.qualification-grid > li > ul > div > div:nth-child(2) > h6:nth-child(3) {
+.qualification-grid > li > ul > li > div:nth-child(2) > h6:nth-child(3) {
     display: flex;
     gap: .35rem;
     align-items: center;
 }
-.qualification-grid > li > ul > div > div:nth-child(2) > h6:nth-child(3) > img {
+.qualification-grid > li > ul > li > div:nth-child(2) > h6:nth-child(3) > img {
     transform: translateY(-1px);
 }
 
@@ -421,7 +423,7 @@ section > h3 {
 
 
 
-.qualification-grid > li > ul > div > div:nth-child(2) {
+.qualification-grid > li > ul > li > div:nth-child(2) {
     margin-left: 1rem;
 }
 .qualification-last {
@@ -615,7 +617,7 @@ footer {
 #copyright {
     text-align: end;
     font-size: .75rem;
-    color: rgb(100 116 139);
+    color: var(--greyed-color);
     font-weight: 600;
 }
 
