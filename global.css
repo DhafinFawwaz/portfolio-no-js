@@ -56,6 +56,25 @@ a {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(19 20 24);
+    border-radius: var(--rounded-xl);
+}
+ 
+::-webkit-scrollbar-thumb {
+    background-color: rgb(55 58 66);
+    border-radius: var(--rounded-xl);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(138, 138, 138);
+    border-radius: var(--rounded-xl);
+}
 
 
 
@@ -377,6 +396,9 @@ section > h3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+}
+.qualification-buttons-group > label > div {
+    transform: translateY(.02rem);
 }
 
 
@@ -701,20 +723,20 @@ footer {
 /* media queries */
 @media (max-width: 720px) {
     h1 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         font-weight: 800;
-        line-height: 3.2rem;
+        line-height: 2.8rem;
     }
     h4 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: 700;
     }
     h5 {
-        font-size: .9rem;
+        font-size: .8rem;
         font-weight: 500;
     }
     p {
-        font-size: 0.875rem;
+        font-size: 0.775rem;
         font-weight: 300;
     }
     
@@ -823,6 +845,11 @@ footer {
     #projects > ul > li > a > div:nth-child(1) {
         height: 7rem;
         overflow: hidden;
+    }
+
+
+    .profile-img-container {
+        max-height: 10rem;
     }
 }
 
