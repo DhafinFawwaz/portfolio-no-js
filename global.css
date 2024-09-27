@@ -29,8 +29,8 @@ body {
     -webkit-font-smoothing: antialiased;
 
     font-family: 'Outfit';
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 img, picture, video, canvas, svg {
@@ -522,6 +522,8 @@ footer {
     padding: 1rem;
     margin-top: 2.25rem;
 }
+
+
 #contact > ul {
     display: flex;
     flex-direction: row;
@@ -565,6 +567,14 @@ footer {
 }
 #contact > ul > li > div {
     padding: 1rem;
+}
+
+
+#copyright {
+    text-align: end;
+    font-size: .75rem;
+    color: rgb(100 116 139);
+    font-weight: 600;
 }
 
 
