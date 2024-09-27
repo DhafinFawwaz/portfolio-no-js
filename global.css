@@ -224,12 +224,15 @@ p {
     background-color:rgb(79 70 229);
     box-shadow: var(--rim-light-top);
     transition-duration: var(--transition-duration-sm);
+    transition-timing-function: var(--ease-out-back);
 }
 .cv-button:hover {
     background-color:rgb(67 56 202);
+    scale: 1.05;
 }
 .cv-button:focus {
     box-shadow:0px 0px 0px 4px rgb(55 48 163);
+    scale: 1.075;
 }
 
 
@@ -237,12 +240,15 @@ p {
     background-color: rgb(47 50 59);
     box-shadow: var(--rim-light-top);
     transition-duration: var(--transition-duration-sm);
+    transition-timing-function: var(--ease-out-back);
 }
 .project-button:hover {
     background-color: rgb(55 58 66);
+    scale: 1.05;
 }
 .project-button:focus {
     box-shadow:0px 0px 0px 4px rgb(40 43 48);
+    scale: 1.075;
 }
 
 
@@ -266,6 +272,7 @@ p {
 .skill > li > ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 0.2rem 0;
     margin: 0;
 }
