@@ -598,11 +598,12 @@ footer {
     margin-top: .3rem;
     font-weight: 700;
 }
-#contact > ul > li > div > h6 {
+#contact > ul > li > div > p {
     z-index: 5;
     padding: 0;
     overflow-wrap: anywhere;
     line-height: .9rem;
+    color: var(--greyed-color);
 }
 #contact > ul > li > a {
     position: absolute;
