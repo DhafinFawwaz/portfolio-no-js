@@ -516,6 +516,7 @@ section > h3 {
     filter: var(--drop-shadow-sm);
 
     display: flex;
+    justify-content: center;
     flex-grow: 1;
 }
 
