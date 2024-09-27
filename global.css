@@ -525,6 +525,7 @@ footer {
 #contact > ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 #contact > ul > li {
@@ -534,6 +535,7 @@ footer {
     border-radius: var(--rounded-xl);
     box-shadow: var(--rim-light-top);
     filter: var(--drop-shadow-md);
+    width: 10rem;
 
     transition-timing-function: var(--ease-out-back);
     transition-duration: var(--transition-duration-sm);
@@ -553,6 +555,10 @@ footer {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+#contact > ul > li > div > h3 {
+    margin-top: .3rem;
+    font-weight: 700;
 }
 #contact > ul > li > div > h6 {
     z-index: 5;
@@ -799,4 +805,9 @@ footer {
     }
 
 
+    /* projects */
+    #projects > ul > li > a > div:nth-child(1) {
+        height: 7rem;
+        overflow: hidden;
+    }
 }
