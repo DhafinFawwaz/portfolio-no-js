@@ -296,7 +296,7 @@ p {
 
 .skill {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
 }
 .skill > li {
@@ -345,7 +345,7 @@ section > h3 {
 }
 .qualification-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     margin-top: 1rem;
 }
 .qualification-grid > li {
@@ -412,7 +412,7 @@ section > h3 {
 
 .qualification-buttons-group {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
 }
 .qualification-buttons-group > label > div {
@@ -496,9 +496,11 @@ section > h3 {
 /* projects */
 #projects > ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1rem;
 }
+
+
 #projects > ul > li > a {
     display: flex;
     flex-direction: column;
@@ -506,6 +508,7 @@ section > h3 {
     border-radius: var(--rounded-xl);
     overflow: hidden;
     max-width: 13rem;
+    width: 100%;
     filter: var(--drop-shadow-md);
     text-decoration: none;
 
@@ -784,7 +787,7 @@ footer {
     }
     .profile-button {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .hidden-if-mobile {
@@ -808,7 +811,7 @@ footer {
     }
 
     .skill {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
 
@@ -895,13 +898,17 @@ footer {
 
 @media (max-width: 800px) {
     #projects > ul {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 @media (max-width: 550px) {
     #projects > ul {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+    /* #projects > ul > li > a {
+        width: 10rem;
+    } */
+
     .qualification-button {
         font-size: small;
     }
@@ -914,10 +921,6 @@ footer {
     }
 }
 @media (max-width: 450px) {
-    #projects > ul {
-        grid-template-columns: 1fr;
-        place-items: center;
-    }
     .qualification-button {
         font-size: x-small;
     }
@@ -932,6 +935,10 @@ footer {
     }
 }
 @media (max-width: 350px) {
+    #projects > ul {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
     .qualification-button {
         font-size: .5rem;
         padding-top: 0.25rem;
