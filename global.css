@@ -1002,7 +1002,7 @@ footer {
     main {
         max-width: var(--max-main-width); 
         width: 100%;
-        padding: 0rem 0rem 1rem 0rem;
+        padding: 0rem .5rem 1rem .5rem;
     }
 
     .profile-details h1 {
