@@ -1018,10 +1018,6 @@ footer {
     }
 }
 @media (max-width: 350px) {
-    #projects > ul {
-        grid-template-columns: 1fr;
-        place-items: center;
-    }
     .qualification-button {
         font-size: .5rem;
         padding-top: 0.25rem;
@@ -1051,6 +1047,10 @@ footer {
 }
 
 @media (max-width: 320px) {
+    #projects > ul {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
     .profile-button > a {
         font-size: .75rem;
         gap: .25rem;
