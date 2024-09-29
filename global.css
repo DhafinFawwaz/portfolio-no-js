@@ -412,7 +412,7 @@ section > h3 {
 /* line */
 .qualification-grid > li > ul > li > div:nth-child(1) > div:nth-child(1) {
     width: .16rem;
-    height: calc(100% + 2rem);
+    height: calc(100% + 1.5rem);
     background-color: rgb(79 70 229);
 
 }
