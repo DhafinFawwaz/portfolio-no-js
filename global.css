@@ -574,7 +574,7 @@ section > h3 {
 
 
 #projects > ul > li > a > div:nth-child(2) {
-    margin: .5rem .75rem;
+    margin: .5rem .65rem .65rem .65rem;
 }
 #projects > ul > li > a > div:nth-child(2) > h3 {
     font-weight: 800;
