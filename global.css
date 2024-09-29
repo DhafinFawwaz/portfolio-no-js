@@ -236,6 +236,12 @@ p {
     gap: 1rem;
     margin-top: 1rem;
 }
+.profile-button > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .base-button {
     border-radius: var(--rounded-lg);
     margin: 0;
@@ -292,6 +298,11 @@ p {
     font-size: .775rem;
     font-weight: 500;
     color: var(--greyed-color);
+}
+#skills > ul > li > h3 {
+    display: flex;
+    gap: .5rem;
+    font-size: medium;
 }
 
 .skill {
@@ -615,6 +626,10 @@ footer {
 #contact > ul > li:hover {
     transform: scale(1.05);
 }
+#contact > ul > li:active {
+    background-color: rgb(47 50 59);
+}
+
 #contact > ul > li:has(a:focus) {
     transform: scale(1.075);
 }
@@ -922,7 +937,7 @@ footer {
 }
 @media (max-width: 450px) {
     .qualification-button {
-        font-size: x-small;
+        font-size: small;
     }
     .qualification-grid {
         margin-top: .5rem;
@@ -931,6 +946,15 @@ footer {
         gap: .5rem;
     }
     .qualification-button > img {
+        scale: .75;
+    }
+
+    .profile-button > a {
+        padding: .5rem 0 .5rem 0;
+        font-size: x-small;
+        gap: .25rem;
+    }
+    .profile-button > a > img {
         scale: .75;
     }
 }
@@ -947,4 +971,17 @@ footer {
     .qualification-button > div {
         margin-top: .075rem;
     }
+
+    #skills > ul > li > h3 {
+        display: flex;
+        gap: .25rem;
+        font-size: small;
+    }
+    #skills > ul > li > h3 > img {
+        scale: .75;
+    }
+    #skills > ul > li > div {
+        font-size: x-small;
+    }
+    
 }
