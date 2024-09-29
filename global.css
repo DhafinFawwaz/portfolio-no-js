@@ -991,7 +991,7 @@ footer {
     }
 
     .profile-button > a {
-        padding: .5rem 0 .5rem 0;
+        padding: .6rem 0rem .6rem 0rem;
         font-size: small;
         gap: .25rem;
     }
@@ -1052,8 +1052,7 @@ footer {
 
 @media (max-width: 320px) {
     .profile-button > a {
-        font-size: x-small;
-        padding: .5rem 0 .5rem 0;
+        font-size: .75rem;
         gap: .25rem;
     }
 }
