@@ -57,6 +57,10 @@ a {
     -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+label {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
 /* scroll bar */
 ::-webkit-scrollbar {
@@ -893,6 +897,31 @@ footer {
     .qualification-buttons-group:has(+ .qualification-grid > #organization-radio:checked) > #organization-label {
         background-color: rgb(67 56 202);
     }
+    #education-label {
+        transition-duration: var(--transition-duration-sm);
+        transition-timing-function: var(--ease-out-back);
+    }
+    #education-label:active {
+        scale: 1.05;
+    }
+    #work-label {
+        transition-duration: var(--transition-duration-sm);
+        transition-timing-function: var(--ease-out-back);
+    }
+    #work-label:active {
+        scale: 1.05;
+    }
+    #organization-label {
+        transition-duration: var(--transition-duration-sm);
+        transition-timing-function: var(--ease-out-back);
+    }
+    #organization-label:active {
+        scale: 1.05;
+    }
+
+    .qualification-grid > li > ul {
+        gap: .5rem;
+    }
 
 
     /* projects */
@@ -904,10 +933,6 @@ footer {
 
     .profile-img-container {
         max-height: 10rem;
-    }
-
-    .qualification-grid > li > ul {
-        gap: .5rem;
     }
 }
 
@@ -939,9 +964,9 @@ footer {
     .qualification-button {
         font-size: small;
     }
-    .qualification-grid {
+    /* .qualification-grid {
         margin-top: .5rem;
-    }
+    } */
     .qualification-buttons-group {
         gap: .5rem;
     }
@@ -951,7 +976,7 @@ footer {
 
     .profile-button > a {
         padding: .5rem 0 .5rem 0;
-        font-size: x-small;
+        font-size: small;
         gap: .25rem;
     }
     .profile-button > a > img {
@@ -983,5 +1008,12 @@ footer {
     #skills > ul > li > div {
         font-size: x-small;
     }
-    
+}
+
+@media (max-width: 320px) {
+    .profile-button > a {
+        font-size: x-small;
+        padding: .5rem 0 .5rem 0;
+        gap: .25rem;
+    }
 }
