@@ -211,10 +211,13 @@ p {
 .profile-details h2 {
     font-size: 1.5rem;
     font-weight: 700;
+    line-height: 1.5rem;
 }
 .profile-details h3 {
+    margin-top: .2rem;
     font-size: 1rem;
     font-weight: 500;
+    line-height: 1.2rem;
 }
 
 .profile-img-container {
@@ -533,9 +536,11 @@ section > h3 {
 #projects > ul > li > a:hover {
     transform: scale(1.05);
 }
+#projects > ul > li > a:active {
+    background-color: rgb(47 50 59);
+}
 #projects > ul > li > a:focus {
     transform: scale(1.075);
-    background-color: rgb(47 50 59);
 }
 
 #projects > ul > li > a > div:nth-child(1) {
@@ -959,6 +964,17 @@ footer {
     section > h3 {
         font-size: .8rem;
     }
+
+    .profile-details h1 {
+        font-size: 2.2rem;
+        line-height: 2.4rem;
+    }
+    .profile-details h2 {
+        font-size: 1.2rem;
+    }
+    .profile-details h3 {
+        font-size: .85rem;
+    }
 }
 @media (max-width: 450px) {
     .qualification-button {
@@ -981,6 +997,24 @@ footer {
     }
     .profile-button > a > img {
         scale: .75;
+    }
+
+    main {
+        max-width: var(--max-main-width); 
+        width: 100%;
+        padding: 0rem 0rem 1rem 0rem;
+    }
+
+    .profile-details h1 {
+        font-size: 2.2rem;
+        line-height: 2.4rem;
+    }
+    .profile-details h2 {
+        font-size: 1.1rem;
+    }
+    .profile-details h3 {
+        margin-top: 0;
+        font-size: .8rem;
     }
 }
 @media (max-width: 350px) {
