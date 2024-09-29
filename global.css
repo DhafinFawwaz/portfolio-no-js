@@ -161,13 +161,12 @@ ul {
 main {
     max-width: var(--max-main-width); 
     width: 100%;
-    padding: 1rem;
-    margin-top: 2.25rem;
+    padding: 0rem 1rem 1rem 1rem;
 }
 
 section {
     width: 100%;
-    padding: 3.5rem .5rem 0 .5rem; 
+    padding: 4.5rem .5rem 0 .5rem; 
 }
 h1 {
     font-size: 3.5rem;
@@ -205,6 +204,15 @@ p {
     grid-template-columns: .4fr .6fr;
     gap: 1rem;
 }
+.profile-details h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.profile-details h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 .profile-img-container {
     display: flex;
     justify-content: center;
@@ -280,6 +288,12 @@ p {
 #skills {
     padding-top: 1rem;
 }
+#skills > ul > li > div {
+    font-size: .775rem;
+    font-weight: 500;
+    color: var(--greyed-color);
+}
+
 .skill {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
